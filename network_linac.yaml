@@ -1,0 +1,20 @@
+gradientMode: "hue"
+cellIdPreamble: "cell-"
+cells: 
+  172.16.1.1:
+    fillColor:
+      # See labelColor
+      dataRef: "172.16.1.1"
+
+      # Version 1.16.0 onwards: Optional alternative data source for the cell taken from the bespoke drive
+      # scope. When set it's used in preference to the dataRef value.
+      bespokeDataRef: null
+    
+      # See labelColor
+      datapoint: "last"
+
+      # See labelColor
+      thresholds:
+        - {color: "green", level: 1}
+        - {color: "red", level: 0}
+
